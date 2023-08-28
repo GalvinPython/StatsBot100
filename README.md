@@ -11,3 +11,5 @@ A Discord bot designed for my server. Currently a work-in-progress.
 # Changelog
 ## 0.1 (28/08/2023)
 - Initial commit; Just a couple of basic commands
+### 0.1.1 (28/08/2023)
+- Started Typescript rewrite. `index.js` is now `index.ts`

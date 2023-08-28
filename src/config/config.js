@@ -1,7 +1,7 @@
 const dotenv = require('dotenv');
 require('dotenv').config();
 
-dotenv.config({ path: './config/keys.env' });
+dotenv.config({ path: './src/config/keys.env' });
 
 module.exports = {
     discordToken: process.env.TOKEN,
