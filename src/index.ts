@@ -1,5 +1,5 @@
-const fs = require('node:fs');
-const path = require('node:path');
+import fs from 'node:fs';
+import path from 'node:path';
 const { Client, Collection, Events, GatewayIntentBits, ActivityType, REST, Routes } = require('discord.js');
 
 const token = require('./config/config.ts').discordToken;

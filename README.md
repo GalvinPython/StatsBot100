@@ -18,3 +18,7 @@ A Discord bot designed for my server. Currently a work-in-progress.
 - Integrated `deploy-commands.js` into `client.ts`
 - Added **/info** command - responds with information about the bot
 - Added embed option to **/say**
+### 0.1.3 (29/08/2023)
+- Improved embeds
+- Added more information to **/info**
+- Modified imports in `index.ts`
