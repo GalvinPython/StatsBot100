@@ -1,7 +1,6 @@
-const dotenv = require('dotenv');
-require('dotenv').config();
+import * as dotenv from 'dotenv';
 
-dotenv.config({ path: './src/config/keys.env' });
+dotenv.config({ path: `${__dirname}/keys.env` });
 
 module.exports = {
     discordToken: process.env.TOKEN,
