@@ -1,2 +1,6 @@
 *.env
 node_modules/
+
+# upcoming features - currently a WIP
+src/db
+src/functions

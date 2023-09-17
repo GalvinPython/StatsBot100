@@ -6,6 +6,9 @@ const token = require('./config/config.ts').discordToken;
 const clientId = require('./config/config.ts').clientId;
 const guildId = require('./config/config.ts').guildId;
 
+// TODO: WORK ON
+// const youtubeVideoPoster = require('./functions/youtubeVideoPoster')
+
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.commands = new Collection();
@@ -67,7 +70,7 @@ for (const folder of commandFolders) {
 
 client.once(Events.ClientReady, (c: { user: { tag: any; setPresence: (arg0: { activities: { name: string; type: any; url: string; }[]; status: string; }) => void; }; }) => {
     console.log(`Ready! Logged in as ${c.user.tag}`);
-    c.user.setPresence({ activities: [{ name: 'MrBeast Stuff', type: ActivityType.Streaming, url: 'https://www.youtube.com/watch?v=KIuPoOOeeRQ' }], status: 'online' });
+    c.user.setPresence({ activities: [{ name: 'MRBEAST VS T-SERIES: BATTLE FOR MOST SUBSCRIBED', type: ActivityType.Streaming, url: 'https://www.youtube.com/watch?v=BJk8TNmchdk' }], status: 'online' });
 });
 
 client.on(Events.InteractionCreate, async (interaction: { isChatInputCommand: () => any; commandName: any; replied: any; deferred: any; followUp: (arg0: { content: string; ephemeral: boolean; }) => any; reply: (arg0: { content: string; ephemeral: boolean; }) => any; }) => {
@@ -88,5 +91,9 @@ client.on(Events.InteractionCreate, async (interaction: { isChatInputCommand: ()
 		}
 	}
 });
+
+// TODO: WORK ON
+// youtubeVideoPoster.youtubeVideoFeed();
+// setInterval(() => youtubeVideoPoster.youtubeVideoFeed(), 1000000)
 
 client.login(token);
