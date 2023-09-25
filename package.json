@@ -16,7 +16,7 @@
     "xml-js": "^1.6.11"
   },
   "devDependencies": {
-    "@types/node": "^20.6.2",
+    "@types/node": "^20.6.5",
     "eslint": "^8.50.0",
     "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
